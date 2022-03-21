@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cabra"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-23 08:18:44 "/>
+        <attribute name="created" value="Y2FicmE7QkFSQkFSQS1DQUJSQUw7MjAyMi0wMi0yMzsiMDg6MDQ6MTQgIjsyNjQ3"/>
+        <attribute name="edited" value="Y2FicmE7QkFSQkFSQS1DQUJSQUw7MjAyMi0wMi0yMzsiMDg6MTg6NDQgIjsxOzI3NjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Janeiro, Fevereiro, Mar&#231;o, Abril" type="Real" array="False" size=""/>
+            <declare name="MediaDeVendas" type="Real" array="False" size=""/>
+            <input variable="Janeiro"/>
+            <input variable="Fevereiro"/>
+            <input variable="Mar&#231;o"/>
+            <input variable="Abril"/>
+            <assign variable="MediaDeVendas" expression="(Janeiro+Fevereiro+Mar&#231;o+Abril)/4"/>
+            <if expression="MediaDeVendas&gt;=5000">
+                <then>
+                    <output expression="&quot;Parab&#233;ns! Voc&#234; ganhou uma bonifica&#227;o de 13%!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Parab&#233;ns! Voc&#234; ganhou uma bonifica&#231;&#227;o de 3%!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cabra"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-24 08:45:11 "/>
+        <attribute name="created" value="Y2FicmE7QkFSQkFSQS1DQUJSQUw7MjAyMi0wMi0yNDsiMDg6MzY6MjUgIjsyNjU1"/>
+        <attribute name="edited" value="Y2FicmE7QkFSQkFSQS1DQUJSQUw7MjAyMi0wMi0yNDsiMDg6NDU6MTEgIjsyOzI3NTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, limite, multiplicador" type="Integer" array="False" size=""/>
+            <assign variable="numero" expression="0"/>
+            <assign variable="multiplicador" expression="0"/>
+            <assign variable="limite" expression="90"/>
+            <while expression="numero&lt;=90">
+                <output expression="&quot;9 x &quot; &amp; multiplicador &amp; &quot; = &quot; &amp; numero" newline="True"/>
+                <assign variable="numero" expression="numero+9"/>
+                <assign variable="multiplicador" expression="multiplicador+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

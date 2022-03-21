@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cabra"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-23 09:32:59 "/>
+        <attribute name="created" value="Y2FicmE7QkFSQkFSQS1DQUJSQUw7MjAyMi0wMi0yMzsiMDk6MjA6MzggIjsyNjUy"/>
+        <attribute name="edited" value="Y2FicmE7QkFSQkFSQS1DQUJSQUw7MjAyMi0wMi0yMzsiMDk6MzI6NTkgIjsxOzI3NjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nome" type="String" array="False" size=""/>
+            <declare name="Nota1, Nota2, Nota3, Media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite seu nome:&quot;" newline="True"/>
+            <input variable="Nome"/>
+            <output expression="&quot;Digite sua primeira nota:&quot;" newline="True"/>
+            <input variable="Nota1"/>
+            <output expression="&quot;Digite sua segunda nota:&quot;" newline="True"/>
+            <input variable="Nota2"/>
+            <output expression="&quot;Digite sua terceira nota:&quot;" newline="True"/>
+            <input variable="Nota3"/>
+            <assign variable="Media" expression="(Nota1+Nota2+Nota3)/3"/>
+            <output expression="nome &amp; &quot;sua Media foi &quot; &amp; Media" newline="True"/>
+            <if expression="Media&gt;=7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns! voc&#234; foi aprovado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente voc&#234; n&#227;o atingiu a nota suficiente. Procure sua professora para iniciar o processo de recupera&#231;&#227;o.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
