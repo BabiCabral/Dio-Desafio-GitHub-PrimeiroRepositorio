@@ -1,4 +1,4 @@
-# Repositório do Desafio de Projeto sobre GIt/GitHub da DIO (Dio.me)
+# Repositório do Desafio de Projeto sobre Git/GitHub da DIO (Dio.me)
 Repositório criado para o Desafio.
 > Contém meus estudos e anotações de conteúdos vistos no Bootcamp Banco Carrefour Woman Developer
 ### Dica de estudo para outros Dev's:
