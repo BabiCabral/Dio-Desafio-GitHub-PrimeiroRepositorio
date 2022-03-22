@@ -1,6 +1,6 @@
 # Repositório do Desafio de Projeto sobre Git/GitHub da DIO (Dio.me)
 Repositório criado para o Desafio.
-> Contém meus estudos e anotações de conteúdos vistos no Bootcamp Banco Carrefour Woman Developer
+> Contém meus estudos e anotações de conteúdos vistos (até o momento) no Bootcamp Banco Carrefour Woman Developer
 ### Dica de estudo para outros Dev's:
 
 > 1- Anotações a mão: Segundo estudos e pesquisas da área de educação, ao escrever anotações e desenhar a mão, o cérebro recebe estímulos que ajudam na memorização e aprendizado. 
