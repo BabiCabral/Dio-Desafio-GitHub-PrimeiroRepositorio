@@ -1,0 +1,14 @@
+## IDE Instalação e configuração (Visual Studio Code)##
+
+por: Stephany Nusck (linkedin)
+
+| Aula 1      | Instalando o Vs Code |
+| :---------- | :------------------: |
+| **Aula 2**  |   Recursos Básicos   |
+| **Aula  3** |  Extensões e Temas   |
+| **Aula 4**  |    Terminal e GIT    |
+
+ #### Aula 1 - Instalando o Vs Code####
+
+### Aula 2  - Recursos Básicos
+

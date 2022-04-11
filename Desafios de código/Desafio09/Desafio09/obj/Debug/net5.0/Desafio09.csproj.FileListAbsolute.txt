@@ -1,0 +1,16 @@
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\bin\Debug\net5.0\Desafio09.exe
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\bin\Debug\net5.0\Desafio09.deps.json
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\bin\Debug\net5.0\Desafio09.runtimeconfig.json
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\bin\Debug\net5.0\Desafio09.runtimeconfig.dev.json
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\bin\Debug\net5.0\Desafio09.dll
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\bin\Debug\net5.0\ref\Desafio09.dll
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\bin\Debug\net5.0\Desafio09.pdb
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\obj\Debug\net5.0\Desafio09.csproj.AssemblyReference.cache
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\obj\Debug\net5.0\Desafio09.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\obj\Debug\net5.0\Desafio09.AssemblyInfoInputs.cache
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\obj\Debug\net5.0\Desafio09.AssemblyInfo.cs
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\obj\Debug\net5.0\Desafio09.csproj.CoreCompileInputs.cache
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\obj\Debug\net5.0\Desafio09.dll
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\obj\Debug\net5.0\ref\Desafio09.dll
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\obj\Debug\net5.0\Desafio09.pdb
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio09\Desafio09\obj\Debug\net5.0\Desafio09.genruntimeconfig.cache

@@ -1,0 +1,16 @@
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\bin\Debug\net5.0\Desafio08.exe
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\bin\Debug\net5.0\Desafio08.deps.json
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\bin\Debug\net5.0\Desafio08.runtimeconfig.json
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\bin\Debug\net5.0\Desafio08.runtimeconfig.dev.json
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\bin\Debug\net5.0\Desafio08.dll
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\bin\Debug\net5.0\ref\Desafio08.dll
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\bin\Debug\net5.0\Desafio08.pdb
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\obj\Debug\net5.0\Desafio08.csproj.AssemblyReference.cache
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\obj\Debug\net5.0\Desafio08.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\obj\Debug\net5.0\Desafio08.AssemblyInfoInputs.cache
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\obj\Debug\net5.0\Desafio08.AssemblyInfo.cs
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\obj\Debug\net5.0\Desafio08.csproj.CoreCompileInputs.cache
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\obj\Debug\net5.0\Desafio08.dll
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\obj\Debug\net5.0\ref\Desafio08.dll
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\obj\Debug\net5.0\Desafio08.pdb
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio8\Desafio08\obj\Debug\net5.0\Desafio08.genruntimeconfig.cache

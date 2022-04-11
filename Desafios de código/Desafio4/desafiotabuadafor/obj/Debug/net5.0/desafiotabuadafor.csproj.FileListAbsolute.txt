@@ -1,0 +1,16 @@
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\bin\Debug\net5.0\desafiotabuadafor.exe
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\bin\Debug\net5.0\desafiotabuadafor.deps.json
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\bin\Debug\net5.0\desafiotabuadafor.runtimeconfig.json
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\bin\Debug\net5.0\desafiotabuadafor.runtimeconfig.dev.json
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\bin\Debug\net5.0\desafiotabuadafor.dll
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\bin\Debug\net5.0\ref\desafiotabuadafor.dll
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\bin\Debug\net5.0\desafiotabuadafor.pdb
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\obj\Debug\net5.0\desafiotabuadafor.csproj.AssemblyReference.cache
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\obj\Debug\net5.0\desafiotabuadafor.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\obj\Debug\net5.0\desafiotabuadafor.AssemblyInfoInputs.cache
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\obj\Debug\net5.0\desafiotabuadafor.AssemblyInfo.cs
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\obj\Debug\net5.0\desafiotabuadafor.csproj.CoreCompileInputs.cache
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\obj\Debug\net5.0\desafiotabuadafor.dll
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\obj\Debug\net5.0\ref\desafiotabuadafor.dll
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\obj\Debug\net5.0\desafiotabuadafor.pdb
+C:\workspace\atualizaçãoparapassarproGithub\Desafios de código\Desafio4\desafiotabuadafor\obj\Debug\net5.0\desafiotabuadafor.genruntimeconfig.cache

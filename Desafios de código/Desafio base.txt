@@ -1,0 +1,467 @@
+# Desafios - Banco Carrefour Woman Developer
+
+## 1 / 9 - Cálculo Simples
+
+Neste problema, deve-se ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o código de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2. Após, calcule e mostre o valor a ser pago.
+
+### Entrada
+
+O arquivo de entrada contém duas linhas de dados. Em cada linha haverá 3 valores, respectivamente dois inteiros e um valor com 2 casas decimais.
+
+### Saída
+
+A saída deverá ser uma mensagem conforme o exemplo fornecido abaixo, lembrando de deixar um espaço após os dois pontos e um espaço após o "R$". O valor deverá ser apresentado com 2 casas após o ponto.
+
+ 
+
+| Exemplos de Entrada | Exemplos de Saída       |
+| ------------------- | ----------------------- |
+| 12 1 5.3016 2 5.10  | VALOR A PAGAR: R$ 15.50 |
+
+| 13 2 15.30161 4 5.20 | VALOR A PAGAR: R$ 51.40 |
+| -------------------- | ----------------------- |
+|                      |                         |
+
+| 1 1 15.102 1 15.10 | VALOR A PAGAR: R$ 30.20 |
+| ------------------ | ----------------------- |
+|                    |                         |
+
+## RESOLUÇÃO##
+
+using System; 
+
+class DIO{
+
+    static void Main(string[] args) {
+    	string[] input;
+    
+          input = Console.ReadLine().Split(' ');
+        int cod1 = int.Parse(input[0]);
+        int n1 = int.Parse(input[1]);
+        double valor1 = double.Parse(input[2]);
+     //Escreva sua lógica nos espaços em branco
+ 	      input = Console.ReadLine().Split(' ');
+        int cod2 = int.Parse(input[0]);
+          int n2  = int.Parse(input[1]);
+        double valor2 = double.Parse(input[2]);
+    
+        double total = (n1*valor1)+(n2*valor2);
+        Console.WriteLine($"VALOR A PAGAR: R$ {total:F2}");
+    }
+
+}
+
+-------------------
+
+## 2 / 9 - Média 2
+
+Leia 3 valores, no caso, variáveis A, B e C, que são as três notas de um aluno. A seguir, calcule a média do aluno, sabendo que a nota A tem peso 2, a nota B tem peso 3 e a nota C tem peso 5. Considere que cada nota pode ir de 0 até 10.0, sempre com uma casa decimal.
+
+### Entrada
+
+O arquivo de entrada contém 3 valores com uma casa decimal, de dupla precisão (double).
+
+### Saída
+
+Imprima a variável **MEDIA** conforme exemplo abaixo, com 1 dígito após o ponto decimal e com um espaço em branco antes e depois da igualdade. Assim como todos os problemas, não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".
+
+ 
+
+| Exemplos de Entrada | Exemplos de Saída |
+| ------------------- | ----------------- |
+| 5.06.07.0           | MEDIA = 6.3       |
+
+| 5.010.010.0 | MEDIA = 9.0 |
+| ----------- | ----------- |
+|             |             |
+
+| 10.010.05.0 | MEDIA = 7.5 |
+| ----------- | ----------- |
+|             |             |
+
+### RESOLUÇÃO###
+
+using System;
+
+namespace Start
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double A, B, C;
+            A = double.Parse(Console.ReadLine())*2;
+            B = double.Parse(Console.ReadLine())*3;
+            C = double.Parse(Console.ReadLine())*5;
+            
+            Console.WriteLine($"MEDIA = {((A+B+C)/10):F1}");
+            Console.ReadKey();
+        }
+    }
+}
+
+------
+
+## 3 / 9 - Fórmula de Bhaskara
+
+Leia 3 valores de ponto flutuante e efetue o cálculo das raízes da equação de Bhaskara. Se não for possível calcular as raízes, mostre a mensagem correspondente *“Impossivel calcular”*, caso haja uma divisão por 0 ou raiz de numero negativo.
+
+### Entrada
+
+Leia três valores de ponto flutuante (double) A, B e C.
+
+## Saída
+
+Se não houver possibilidade de calcular as raízes, apresente a mensagem "Impossivel calcular". Caso contrário, imprima o resultado das raízes com 5 dígitos após o ponto, com uma mensagem correspondente conforme exemplo abaixo. Imprima sempre o final de linha após cada mensagem.
+
+ 
+
+| Exemplos de Entrada | Exemplos de Saída          |
+| ------------------- | -------------------------- |
+| 10.0 20.1 5.1       | R1 = -0.29788R2 = -1.71212 |
+
+| 0.0 20.0 5.0 | Impossivel calcular |
+| ------------ | ------------------- |
+|              |                     |
+
+| 10.3 203.0 5.0 | R1 = -0.02466R2 = -19.68408 |
+| -------------- | --------------------------- |
+|                |                             |
+
+| 10.0 3.0 5.0 | Impossivel calcular |
+| ------------ | ------------------- |
+|              |                     |
+
+## RESOLUÇÃO##
+
+using System; 
+
+class minhaClasse {
+
+    static void Main(string[] args) { 
+
+            double a, b, c, delta, r1, r2;
+            string[] valor = Console.ReadLine().Split();
+    
+            a = Convert.ToDouble(valor[0]);
+            b = Convert.ToDouble(valor[1]);
+            c = Convert.ToDouble(valor[2]);
+    
+            delta = (Math.Pow(b, 2) - (4 * a * c));
+            r1 = (-b + Math.Sqrt(delta)) / (2 * a);
+            r2 = (-b - Math.Sqrt(delta)) / (2 * a);
+    
+            if (a != 0 && delta > 0)
+            {
+              Console.WriteLine($"R1 = {r1:F5}");
+              Console.WriteLine($"R2 = {r2:F5}");
+            }
+            else
+            {
+                Console.WriteLine("Impossivel calcular");
+            }
+    
+    }
+
+}
+
+---------------
+
+## 4 / 9 - Tabuada
+
+Leia 1 valor inteiro N (2 < N < 1000). A seguir, mostre a tabuada de N:      
+1 x N = N      2 x N = 2N        ...       10 x N = 10N
+
+### Entrada
+
+A entrada contém um valor inteiro **N **(2 < **N **< 1000).
+
+### Saída
+
+Imprima a tabuada de N, conforme o exemplo fornecido.
+
+ 
+
+| Exemplo de Entrada | Exemplo de Saída                         |
+| ------------------ | ---------------------------------------- |
+| 140                | 1 x 140 = 1402 x 140 = 2803 x 140 = 4204 x 140 = 5605 x 140 = 7006 x 140 = 8407 x 140 = 9808 x 140 = 11209 x 140 = 126010 x 140 = 1400 |
+
+## RESOLUÇÃO##
+
+using System;
+
+namespace Uri1078
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+    
+            for (int multiplicador = 1; multiplicador <= 10; multiplicador++)
+            {
+                Console.WriteLine($"{multiplicador} x {n} = {multiplicador*n}"); 
+              //escreva o seu código nos espaços em branco
+            }
+        }
+    }
+}
+
+----------
+
+## 5 / 9 - Ho Ho Ho
+
+Papai Noel está brincando com seus duendes para entretê-los durante a véspera do Natal. A brincadeira consiste nos elfos escreverem números em pedaços de papel e colocarem no gorro do Papai Noel. Após todos terminarem de colocar os números Noel sorteia um papel e aquele número representa quantos "Ho" o Noel deve falar.
+
+Seu trabalho é ajudar o Papai Noel montando um problema que mostre todos os "Ho" que ele deve falar dado o número sorteado.
+
+### Entrada
+
+A entrada é composta por um único inteiro **N **(0 < **N** ≤ 106) representando quantos "Ho" serão falados por Noel.
+
+### Saída
+
+A saída é composta por todos "Ho" que Papai Noel deve falar separados por um espaço. Após o último "Ho" deve ser apresentado um "!" encerrando o programa.
+
+ 
+
+| Exemplo de Entrada | Exemplo de Saída |
+| ------------------ | ---------------- |
+| 5                  | Ho Ho Ho Ho Ho!  |
+
+Contest de Natal 2014
+
+## RESOLUÇÃO##
+
+using System;
+
+namespace DIO {
+    class Program {
+        static void Main(string[] args) {
+           
+            int N = int.Parse(Console.ReadLine());
+    
+            //Exibir "Ho" do papai noel
+            for (int i = 0; i < N; i++) {
+                if (i<N-1) {
+                    Console.Write("Ho ");                  //Complete o código no espaço em branco
+                }
+                else{
+                    Console.WriteLine("Ho!");
+                }
+            }
+        }
+    }
+}
+
+---------
+
+## 6 / 9 - Pneu
+
+Calibrar os pneus do carro deve ser uma tarefa cotidiana de todos os motoristas. Para isto, os postos de gasolina possuem uma bomba de ar. A maioria das bombas atuais são eletrônicas, permitindo que o motorista indique a pressão desejada num teclado. Ao ser ligada ao pneu, a bomba primeiro lê a pressão atual e calcula a diferença de pressão entre a desejada e a lida. Com esta diferença ela esvazia ou enche o pneu para chegar na pressão correta.
+
+Sua ajuda foi requisitada para desenvolver o programa da próxima bomba da SBC - Sistemas de Bombas Computadorizadas.
+
+Escreva um programa que, dada a pressão desejada digitada pelo motorista e a pressão do pneu lida pela bomba, indica a diferença entre a pressão desejada e a pressão lida.
+
+### Entrada
+
+A primeira linha da entrada contém um inteiro **N** que indica a pressão desejada pelo motorista (1 ≤ **N** ≤ 40). A segunda linha contém um inteiro **M** que indica a pressão lida pela bomba (1 ≤ **M** ≤ 40).
+
+### Saída
+
+Seu programa deve imprimir uma única linha, contendo a diferença entre a pressão desejada e a pressão lida.
+
+ 
+
+| Exemplos de Entrada | Exemplos de Saída |
+| ------------------- | ----------------- |
+| 3018                | 12                |
+
+ 
+
+| 2727 | 0    |
+| ---- | ---- |
+|      |      |
+
+ 
+
+| 2730 | -3   |
+| ---- | ---- |
+|      |      |
+
+OBI - Olimpíada Brasileira de Informática 2010 Fase 1 Nível Júnior
+
+## RESOLUÇÃO##
+
+using System;
+
+class TESTE {
+    static void Main () {
+        var A = int.Parse(Console.ReadLine());
+        var B = int.Parse(Console.ReadLine());
+        
+        Console.WriteLine($"{A-B}");
+       //Termine o código 
+        
+    }
+}
+
+----
+
+## 7 / 9 - PUM
+
+### Desafio
+
+Desenvolva um programa que leia um valor inteiro N. Este N refere-se à quantidade de linhas de saída que serão apresentadas na execução do programa.
+
+### Entrada
+
+O arquivo de entrada contém um número inteiro positivo N.
+
+### Saída
+
+Imprima a saída conforme o exemplo fornecido.
+
+ 
+
+| Exemplo de Entrada | Exemplo de Saída                         |
+| ------------------ | ---------------------------------------- |
+| 7                  | 1 2 3 PUM5 6 7 PUM9 10 11 PUM13 14 15 PUM17 18 19 PUM21 22 23 PUM25 26 27 PUM |
+
+## RESOLUÇÃO##
+
+using System;
+
+namespace TESTE {
+    class Program {
+        static void Main(string[] args) {
+        
+            int N = int.Parse(Console.ReadLine());
+    
+            int aux = 1;
+            for (int i = 1; i <= N; i++) {
+    
+               Console.Write("{0} ", aux);
+               aux++;
+               Console.Write("{0} ", aux);
+               aux++;
+               Console.Write("{0} PUM \n", aux);
+               aux+=2;
+            }
+        }
+    }
+}
+
+--------
+
+## 8 / 9 - Polígonos Regulares Simples
+
+Na geometria Euclidiana, um polígono regular é um polígono em que todos os ângulos são iguais e todos os lados tem o mesmo comprimento. Um polígono simples é aquele cujos segmentos de reta não se interceptam. Abaixo pode-se ver vários mosaicos feitos por polígonos regulares.
+
+![img](https://www.urionlinejudge.com.br/gallery/images/contests/C_1.jpg)
+
+Você deve escrever um programa que, dados o número e o comprimento dos lados de um polígono regular, mostre seu perímetro.
+
+### Entrada
+
+A entrada tem dois inteiros positivos: **N** e **L**, que são, respectivamente, o número de lados e o comprimento de cada lado de um polígono regular (3 ≤ **N** ≤ 1000000 and 1 ≤ **L** ≤ 4000).
+
+### Saída
+
+A saída é o perímetro **P** do polígono regular em uma única linha.
+
+ 
+
+| Exemplos de Entrada | Exemplos de Saída |
+| ------------------- | ----------------- |
+| 3 1                 | 3                 |
+
+ 
+
+| 9 8  | 72   |
+| ---- | ---- |
+|      |      |
+
+ 
+
+| 1000000 1000 | 1000000000 |
+| ------------ | ---------- |
+|              |            |
+
+Prova 1 de Programação de Computadores da UNILA (2015/2)
+
+## RESOLUÇÃO##
+
+using System;
+
+    class Problem
+    {
+        static void Main(string[] args)
+        {
+          
+            int N = int.Parse(Console.ReadLine());
+            int L = int.Parse(Console.ReadLine());
+        
+            int P = N*L;
+        
+        Console.Write($"{P}");
+         }
+    }
+---------
+
+## 9 / 9 - Quadrado e ao Cubo
+
+### Desafio
+
+Você terá o desafio de escrever um programa que leia um valor inteiro N (1 < N < 1000). Este N é a quantidade de linhas de saída que serão apresentadas na execução do programa.
+
+### Entrada
+
+O arquivo de entrada contém um número inteiro positivo N.
+
+### Saída
+
+Imprima a saída conforme o exemplo fornecido.
+
+ 
+
+| Exemplo de Entrada | Exemplo de Saída                |
+| ------------------ | ------------------------------- |
+| 5                  | 1 1 12 4 83 9 274 16 645 25 125 |
+
+## RESOLUÇÃO##
+
+using System;
+
+namespace DIO
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+    
+            double x = 1;
+            double y;
+            double z;
+
+
+            for (int i = 1; i <= n; i++)
+            {
+                Console.Write("{0} ", x);
+                y = Math.Pow(x, 2);
+                Console.Write("{0} ", y);
+                z = Math.Pow(x, 3);
+                Console.Write("{0} \n", z);
+                x++;
+                
+            }
+        }
+    }
+}
+
+-----------------
+
+# FIM (=
+

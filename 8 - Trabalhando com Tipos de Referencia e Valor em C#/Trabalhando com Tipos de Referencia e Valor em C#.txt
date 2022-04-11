@@ -1,0 +1,58 @@
+- Common Type System (CTS) - Sistema Comum de Tipos
+
+- Instância -> Contém o valor da variável
+
+  Ex: Imagine a variável X que possui uma caixa com o número 5. A caixa é a instância e 5 é o valor de X. Toda variável tem uma instância e toda instância contém um valor
+
+  ​
+
+  Value Types (Tipos de valor): 
+
+- Contém uma INSTÂNCIA do tipo criado
+
+- A instância sempre é copiada ao atribuir o valor para outra variável
+
+- Alocação na Stack (melhor performance)
+
+- O valor inicial é sempre o valor default de cada tipo
+
+- Tipos: Tipo primitivos (valores numéricos) como int, decimal, double, float, etc; Boolean (true/false); Char; Tuples.
+
+  ​Reference Type (Tipo de referência):
+
+- Contém uma REFERÊNCIA para uma instância do tipo criado
+
+Ex: Imagine que a caixa anterior da variável X contém um ponteiro. O ponteiro é a Referência que a Instância (caixa) possui.
+
+- A referência nunca muda ao atribuir o valor para outra variável
+
+- Na STACK fica um ponteiro e a alocação na HEAP
+
+- Seu valor inicial é sempre "'Null" (Nulo)
+
+- Requer gerenciameno da Memória através do GC (Garbage Collector)
+
+- Tipos; Classe, Interface, Delegate, Record, Object, String (tipo primitivo mas não tem tamanho definido pois pode conter um numero infinito de caracteres).
+
+  -------------------------------------------------------
+
+  **using static System.Console;**   -> permite que use o ReadLine e o WriteLine sem precisar do "Console." antes
+
+  ​
+
+  **$** - interpolação (nao precisar usar a concatenação)
+
+  **@** - permite dar enter (pulo) nas linhas
+
+  **ex:** 
+
+  Console.Writeline($@"
+
+  O nome de p1 é : {p1.Nome}
+
+  O nome de p2 é : {p2.Nome}
+
+  ");
+
+
+O operador **new** cria uma nova instância de um tipo.

@@ -1,0 +1,353 @@
+### Iniciando com .NET###
+
+#### CLI do .NET####
+
+###### dotnet --version#####
+
+| Comandos                    | O que faz?                               |
+| --------------------------- | ---------------------------------------- |
+| dotnet --version            | Mostra a versão do .NET que está sendo utilizado |
+| dotnet --help               | Mostra todos os comandos que posso usar  |
+| dotnet --info               | Mostra informações do .NET instalado na máquina |
+| dotneet --new               | Cria um novo projeto                     |
+| dotnet new --help           | Mostra todos os comandos que posso usar para criar um novo projeto |
+| dotnet new --list --tag web | Lista somente as aplicações de web disponivéis para criar um novo projeto |
+| dotnet new console -n myApp | Cria um novo projeto do tipo console e dá o nome "myApp" para esse projeto |
+| cd myApp                    | Entra no diretório myApp criado          |
+| dotnet run                  | Roda/ Executa o projeto (nessa hora aparece o Hello, World!) |
+| dotnet build                | Copila o projeto (gera os binários)      |
+| dotnet restore              | Resgata as dependênciais                 |
+| dotnet tools                | Cria ferramentas                         |
+| explorer .                  | Abre a pasta que estamos localizados     |
+| code .                      | Abre no visual studio code a pasta que estamos no git bash ou cmd |
+| dotnet run -p myApp         | roda o projeto "myApp" que ta em alguma pasta, sem precisar estar dentro dela no CLI |
+|                             |                                          |
+|                             |                                          |
+|                             |                                          |
+|                             |                                          |
+
+##### Pasta bin - Binários da minha aplicação#####
+
+.dll
+
+.exe - o executavel
+
+.pdb - pontos de debug que tenho na minha aplicação
+
+--------------------------------------------------------------------------------
+
+## **Conhecendo o C#**
+
+#### **O que é o C#?**
+
+É a linguagem mais usada no .NET, que comou a ser criada no final da década de 90 e surgiu junto com o .NET. Teve sua versão 1.0 em 2002. 
+
+É uma lingugem elegante, orientada a obejto e fortemente tipada. A sintaxe do C# é similar a do C, C++ ou Java. Suporta os conceitos de encapsulamento, herana e polimorfismo (oo).
+
+Os programas C# são executados no .NET, que inclui:
+
+- CLR (Common Language runtime);
+- Conjunto unificado de bibliotecas de classes.
+
+Atualmente o compilador do C# o Roslyn.
+
+#### **Como funciona?**
+
+O código-fonte escrito em C# é compilado em uma linguagem intermediária (IL)
+
+O código e os recursos de IL são armazenados no disco em um arquivo executável chamado assembly, geralmente com uma extensão .exe ou .dll
+
+Quando o programa C# é executado, o assembly é carregado no CLR _(Common Language Runtime)_.
+
+Em seguida o CLR executará a compilação _just in time_ (JIT) para converter o código IL em instruções de máquinas nativas.
+
+[Esquema Visual](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Overview_of_the_Common_Language_Infrastructure.svg/1200px-Overview_of_the_Common_Language_Infrastructure.svg.png)
+
+O CLR também fornece outros serviços:
+
+- Garbage Collector (coletor de lixo. Libera espaço na memória exclindo iens que não são uteis/utilizados)
+- Exception Handler (Receber e controlar as exceções de erros na nossa execução)
+- Resources Manager (Gerenciador de recursos)
+
+#### **Estrutura de Programa**
+
+OS principais conceitos organizacionais em C# são:
+
+- Programas
+- Namespaces
+- Tipos
+- Membros
+- Assemblies
+
+**Programas:**
+
+Programas C# consistem em um ou mais arquivos. Eles declaram tipos, que contem membros e podem ser organizados em namespaces
+
+- Classes e interfaces são exemplos de tipos.
+- Campos, métodos, propriedades e eventos são exemplos de membros.
+
+Quando os progrmas C# são compilados, eles são fisicamente empacotados em assemblies. Os assemblies geralmente têm a extnsão de arqquivo **.exe** ou **.dll**, dependendo se são aplicações ou bibliotecas.
+
+#### **Tipos e variáveis**####
+
+**Variáveis de tipos de valor:** separa o espaço na memória para esta variável e seus dados (seu valor) estão nesse próprio espaço da memória.
+
+As variáveis têm sua própria cópia dos dados e não é possível que as operações afetem outra variável (exceto no caso das variáveis de paramêtro _ref_ e _out_).
+
+- Numéricos: sbyte, short, int, long, byte, ushort, uint, ulong
+- Caracteres Unicode: char
+- Pontos flutuantes: float, double, decimal
+- Booleano: bool
+- Outros: enum, struct e tipos nullable (exemplo: int?)
+
+**Variáveis de tipos de referência:** Variáveis de tipos de referência armazenam referências a seus dados.
+
+É possível que duas variáveis façam referência ao mesmo objeto e, portanto, que operações em uma variável afetem o objeto referenciado pela outra variavel.
+
+- Tipos de Classe: class, object, string
+- Tipos Arrayys: int[], int[,], etc...
+- Outros: Interface, delegate
+
+#### **Instruções**####
+
+Ações de um programa são expressas usando instruções
+
+{
+
+Um bloco permite que várias instruções sejam escritas em contexto
+
+}
+
+Declarações de variavéis e constantes locais:
+
+- if (condicional) *se*
+- switch (condicional) *caso*
+- while (repetição) *enquanto*
+- do (repetição) *fazer*
+- for (repetição) *para*
+- foreach (repetição) *pra cada*
+- break (auxiliares) *pare*
+- continue (auxiliares) *continue*
+- return (auxiliares) *retornar*
+- throw (exceções) lançar 
+- try .. catch .. finally (exceções) *tentar .. pegar .. finalmente*
+- using (para importar, dentro de um classe, referencias a pacotes e a namespaces do nosso projeto) *usando*
+
+#### **Arrays**####
+
+Arrays é uma coleção de strings (args)
+
+String -> Conjunto de caracteres que representam texto. ficam ente aspas. (abcde1234)
+
+Um **array** é umas estrutura de dados que contém um número X de **elementos**, todos do **mesmo tipo**, que são acessados através de **índices computados**
+
+Arrays são tipos de referência e a declaração de uma variável array simplesmente reserva espaço para uma referência de uma instância e array
+
+Ao criar um array é especificado o tamanho da nova instância, que é fixo durante todo o tempo de vida da instância
+
+Os índices dos elementos de um array variam de **0** a **comprimento do array -1**
+
+exemplo:
+
+ [0], [1] , [2] , [3]  -> comprimento: 4
+
+#### **Array unidimensional:**
+
+`int [ ] a = new int [10] ` `//declarando um array de inteiros chamado de "a" e dando o comprimento dele "10 posições//`
+
+`for (int i = 0; i < a.lenght; i++) //para: inteiro sendo 0, e enquanto o inteiro for menor que se tamanho/comprimento, adicionar +1 ao inteiro//`
+
+`{`
+
+`a[i] = i * i; //vai pegar meu "a" na posição "i" e vai preencher o "a" da posição "i" com i vezes i`
+
+`}`
+
+`for (int i = 0; i < a.Length; i++)` `//enquanto isso//`
+
+`{`
+
+`Console WriteLine($a[{i}] = {a[i] }");` `//Imprima na tela: o a da posição 0 tem tal valor, o a da posição 1 tem outro tal valor//`
+
+`}`
+
+#### **Array multidimensional:** (matrizes e vetores)
+
+`int [ , ]  a2  =  new int [10,5]; //arrays de 2 dimensões//`
+
+`int [ , , ]  a3  =  new int [10, 5, 2]; //arrays de 3 dimensões//`
+
+#### **Inicializador de array:**
+
+`int [ ] a = new int [ ]  {1, 2, 3} ; // não falo a posição mas falo os itens dele`
+
+**ou**
+
+`int [ ] a = {1, 2, 3} ; // valores dele`
+
+**ou**
+
+`int [ ] t = new int [3] ; // Um array de inteiros "t" com 3 posições //`
+
+`t [0] = 1; //na posição 0 vai o valor 1//`
+
+`t [1] = 2;//na posição 1 vai o valor 2//`
+
+`t [2] = 3;//na posição 2 vai o valor 3//`
+
+``int [ ] a = t;``
+
+### Listas
+
+Simliar aos arrays mas mutável. Não tem comprimento/quantidade específica como os Arrays
+
+-------------------------------------------------------------------------------------
+
+### Classes e Objetos
+
+#### **Conceito Geral:**
+
+#### Uma classe é uma unidade do sistema e dentro dela estão definidos atributos e métodos, que são respectivamente as informações que uma classe pode armazenar e ações que elas podem desempenhar.
+
+#### Para ficar mais fácil o entendimento, um atributo possui as mesmas funcionalidades de uma variável, assim como um método o mesmo que um procedimento ou função. 
+
+Uma **classe** é uma estrutura de dados que combina estado (campos, propriedades) e ações (métodos, ações que o obejto vai poder excutar enquanto o tempo de execução).
+
+**Objetos** são instâncias de uma classe
+
+As classes suportam herança e polimorfismo, mecanismos pelos quais as classes derivadas podem estender e especializar as classes base
+
+Instâncias de classes (objetos) são criadas usando o operador new, que aloca memória para uma nova instância, chama um construtor para inicializar a instância e retorna uma referência à instância
+
+Ponto p1 = new Ponto (0, 0);
+
+Ponto p2 = new Ponto (10, 20);
+
+A memória ocupada por um objeto é recuperada automaticamente quando o objeto não está mais acessível. Não é necessário nem possível desalocar explicitamente objetos em C#
+
+### Membros
+
+Os membros de uma classe podem ser estáticos ou membros da instância. Membros estáticos pertencem a classe e membros de instância pertencem ao objeto.
+
+Ex de membros: constantes, variáveis, métodos, propriedades, construtores, etc.
+
+### Acessibilidade
+
+Cada membro de uma classe tem uma acessibilidad associada, que controla as regiões do texto do programa que podem acessar o membro
+
+Podem ser: Public, Protected, Internal, Private.
+
+### Herança
+
+Uma declaração de classe pode especificar uma classe base, herdando os membros public, internal e protectd da classe base
+
+Omitir uma especificação de classe base é o mesmo que derivar do tipo object
+
+### Métodos
+
+Um método é um membro que implementa uma computação ou ação que pode ser executada por um obeto ou classe
+
+Os métodos podem ter uma lista de parâmetros, que representam valores ou referências de variáveis passadis para o método, e um tipo de retorno que especifica o tipo do valor calculado e retornado pelo método.
+
+----------------------------------------------
+
+`Namespace Empresa.Projeto    //Nome do nosso projeto//`
+
+``{``
+
+​	`Class Program  //arquivo .cs que pertence ao projeto Empresa.Projeto.//` 
+
+​	`{`
+
+​		`static void Main(string[ ] args)`
+
+​		`{`	
+
+​			`var nomeCorrentista = " " ;    //variável nomeDaVariavel = valor (ainda sem valor) ;//`
+
+​			`nomeCorrentista = Console.ReadLine( ) ;     // Vai ler a variável nome do correntista que o cliente irá digitar//`
+
+​			`Console.Write("nome da variável = " + nomeCorrentista )`  `//imprime para o console "nome da variável =" + a variável nomeCorrentista`
+
+​			`Console.ReadLine( );` 
+
+​		`}`
+
+​	`}`
+
+``}``
+
+OBS:
+
+A variável recebe valor e pode alterar seu valor
+
+as variaveis guardam um tipo
+
+### Exemplo de lista:
+
+`List<Strings> nomes = new List<String>();`
+
+`nomes.Add("fulando da silva");`
+
+`nomes.Add("beltrano da silva");`
+
+`Console.Write("posição inicial da lista: " + nomes[0] + ", pessoa com o tamanho de lista: " + nomes.Count( ) );`
+
+`Console.Read( );`
+
+------------------------------------------
+
+### Structs
+
+Como as classes, as structs são estruturas de dados que podem conter membros de dados e membros de ação, mas, diferentemente das classes, as structs são tipos de valor e não requerem alocação de heap.
+
+Uma variável de um tipo struct armazena diretamente os dados da estrutura, enquanto uma variável de um tipo classe armazena uma referência a um objeto alocado na memória.
+
+Structs não aceitam herança determinada pelo desenvolvedor
+
+São úteis para pequenas estruturas de dados que possuem semântica de valor: números complexos, pontos em um sistema de coordenadas ou pares de chave-valor em um dicionário são bons exemplos de utilização.
+
+O uso de structs em vez de classes para pequenas estruturas de dados pode fazer uma grande diferença no número de alocações de memória.
+
+ex:
+
+Public struct Ponto
+
+{
+
+​	public int x, y ;
+
+​	public Ponto (int x, int y)
+
+​	{
+
+​		this.x = x;
+
+​		this.y = ;
+
+​	}
+
+}
+
+Construtores de structs são chamados com o operador new, smelhante a um construtor de classe, mas em vez de alocar dinamicamente um obejto no heap gerenciado e retornar uma referência a ele, um ocnstrutor struct simplesmente retorna o próprio valor struct (normalmente em um local temporário na stack), e esse valoré copiado conforme necessário.
+
+### Interfaces
+
+Uma interface define um contrato que pode ser implementado por classes e structs
+
+Uma interface pode conter métodos, propriedades, eventos e indexadores
+
+Uma interface não fornece implementações dos membros que define - apenas suas "assinaturas"
+
+As interfaces podem empregar herança múltipla
+
+### Enums
+
+Um enum é um tipo de valor distinto com um conjunto de constantes nomeadas
+
+Você define enumerações quando precisa definir um tipo que pode ter um conjunto de valores discretos. Eles usam um dos tipos de valor integral como armazenamento subjacente. Eles fornecem significado semântico aos valores discretos.
+
+---------------------------------------------------------------------
+
+REVISÃO:
+
